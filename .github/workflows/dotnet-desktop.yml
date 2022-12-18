@@ -33,5 +33,5 @@ jobs:
     - name: Upload artifact - Windows
       uses: actions/upload-artifact@v3
       with:
-        name: VerbalMemory.exe
-        path: publish/VerbalMemory.exe
+        name: VerbalMemory
+        path: publish/
