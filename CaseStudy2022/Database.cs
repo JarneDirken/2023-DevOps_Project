@@ -8,9 +8,7 @@ using System.Threading.Tasks;
 namespace CaseStudy
 {
     public class Database
-    {
-        //Database stuff -> https://www.youtube.com/watch?v=QppzzwaET-s
-        
+    {   
         public static SQLiteConnection CreateConnection()
         {
             SQLiteConnection sqliteConn;
@@ -92,15 +90,6 @@ namespace CaseStudy
                     }
                 }
             }
-        }
-        public static void DeleteTable(SQLiteConnection conn)
-        {
-            SQLiteCommand sqliteCommand;
-
-            string createSQL = "DROP TABLE IF EXISTS MilestoneTable;";
-            sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = createSQL;
-            sqliteCommand.ExecuteNonQuery();
         }
     }
 }

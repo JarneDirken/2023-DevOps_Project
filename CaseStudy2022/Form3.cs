@@ -30,8 +30,8 @@ namespace CaseStudy
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            lb1.Text = Database.HighScoreValue().ToString(); // this needs to be from database 
-            lb2.Text = Database.HighScoreName().ToString(); // this also needs to be from database, The person who has te alltime highscore
+            lb1.Text = Database.HighScoreValue().ToString(); 
+            lb2.Text = Database.HighScoreName().ToString(); 
             lb3.Text = Program.score.ToString();
             lb4.Text = Form2.instance.name;
         }

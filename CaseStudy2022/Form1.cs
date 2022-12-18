@@ -31,6 +31,17 @@ namespace CaseStudy
         {
             label.Text = Program.generateRandomString();
         }
+        private void button4_Click(object sender, EventArgs e) //seen
+        {
+            label.Text = Program.generateRandomString();
+            label4.Text = Program.updateScore(0).ToString();
+            label1.Text = Program.updateLives(0).ToString();
+            if (lb1.Text == "0")
+            {
+                Form1.instance.Hide();
+                form3.Show();
+            }
+        }
         private void button2_Click(object sender, EventArgs e) //notseen
         {
             label.Text = Program.generateRandomString();
@@ -45,17 +56,6 @@ namespace CaseStudy
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-        private void button4_Click(object sender, EventArgs e) //seen
-        {
-            label.Text = Program.generateRandomString();
-            label4.Text = Program.updateScore(0).ToString();
-            label1.Text = Program.updateLives(0).ToString();
-            if (lb1.Text == "0")
-            {
-                Form1.instance.Hide();
-                form3.Show();
-            }
         }
     }
 }

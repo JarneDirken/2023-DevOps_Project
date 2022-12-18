@@ -11,16 +11,12 @@ namespace CaseStudy
     public class Program
     {
         //variables 
-        public static List<string> seen = new List<string>(); // create list
-        public static List<string> list = new List<string>(); // create list
-        public static int lives;
-        public static int score = 0;
-        public static Random rand = new Random();
-        public static string name = "jarne";
+        public static List<string> seen = new List<string>(); // create list for seen words
+        public static int lives; // create lives variable
+        public static int score = 0; // create score variable
+        public static Random rand = new Random(); // create random variable
+        public static string name = "jarne"; // create name variable
 
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
