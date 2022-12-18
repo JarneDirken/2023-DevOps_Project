@@ -46,7 +46,7 @@ namespace CaseStudy
                 {
                     if (isClicked == false)
                     {
-                        Form2.instance.Hide();
+                        instance.Hide();
                         form1.Show();
                         isClicked = true;
                         name = tb1.Text;

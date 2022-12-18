@@ -24,9 +24,10 @@ namespace CaseStudy
         [STAThread]
         static void Main()
         {
-            //Database
+            //Databases
             SQLiteConnection sQLiteConnection;
             sQLiteConnection = Database.CreateConnection();
+            //Database.DeleteTable(sQLiteConnection);
             Database.CreateTable(sQLiteConnection);
             //starting game
             Application.EnableVisualStyles();
