@@ -35,11 +35,3 @@ jobs:
       with:
         name: VerbalMemory.exe
         path: publish/VerbalMemory.exe
-        
-    - name: Make Release
-      uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
-      with:
-        files: publish/VerbalMemory.exe
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
