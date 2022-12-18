@@ -27,7 +27,6 @@ namespace CaseStudy
             //Database
             SQLiteConnection sQLiteConnection;
             sQLiteConnection = Database.CreateConnection();
-            //Database.DeleteTable(sQLiteConnection);
             Database.CreateTable(sQLiteConnection);
             //starting game
             Application.EnableVisualStyles();
@@ -42,11 +41,22 @@ namespace CaseStudy
         }
         public static String generateRandomString()
         {
-            foreach (string line in System.IO.File.ReadLines(@"..\..\..\Words.txt"))
-            {
-                list.Add(line);                 // add every word in list
-            }
-            String[] str = list.ToArray();           // convert the list to an array.
+            string[] str = new string[] {
+            "abstemious", "adjudicate", "adulation", "aesthetic", "aggregate", "alacrity", "alchemy", "amalgamate", "ameliorate", "amortize",
+            "anachronism", "anathema", "anomaly", "antecedent", "antipathy", "apathy", "apotheosis", "arbitrary", "arduous", "ascetic",
+            "asperity", "assiduous", "atrophy", "augury", "austere", "avarice", "aver", "axiom", "bolster", "bombastic", "brevity",
+            "bucolic", "cachet", "cajole", "calumny", "candor", "canonical", "capricious", "castigate", "catalyst", "caustic",
+            "censure", "chicanery", "cogent", "complaisance", "conciliatory", "condone", "conflate", "confound", "congruous", "consummate",
+            "contemptuous", "contentious", "contrite", "contumacious", "conundrum", "corroborate", "craven", "culpable", "curtail", "cynicism",
+            "dearth", "debacle", "decorum", "deference", "deride", "desuetude", "diatribe", "diffidence", "dilate", "disabuse",
+            "discordant", "disparage", "dissemble", "divest", "ebullience", "eclectic", "effrontery", "egregious", "elixir", "emollient",
+            "empirical", "enervate", "enigma", "ephemeral", "equanimity", "equivocate", "erudite", "evanescent", "evince", "excoriate",
+            "exemplar", "exigent", "exonerate", "expiate", "extemporaneous", "extol", "fervor", "fervid", "fickle", "filibuster",
+            "flout", "fractious", "gainsay", "gall", "gibe", "grandiose", "gregarious", "guile", "hackneyed", "hapless",
+            "harangue", "hegemony", "hyperbole", "impecunious", "imperturbable", "impetuous", "implacable", "impugn", "incontrovertible", "incumbent",
+            "indefatigable", "indifferent", "ineffable", "infelicitous", "ingenuous", "inimical", "insidious", "insolvent", "intractable", "intransigence",
+            "invective", "irascible", "laconic", "largesse", "lethargy", "lionize", "lucid", "luminous", "magnanimity", "malevolent",
+            "malinger", "martial", "mendacious", "mercurial", "mettle", "misanthrope", "mitigate", "multifarious", "nefarious", "negate" };
             rand = new Random();
             int index = rand.Next(str.Length);
             string rnd = str[index];
