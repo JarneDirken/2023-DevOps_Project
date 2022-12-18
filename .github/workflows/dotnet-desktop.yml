@@ -31,7 +31,7 @@ jobs:
         mv './publish/CaseStudy2022.exe' ./publish/VerbalMemory.exe
         
     - name: Upload artifact - Windows
-      uses: actions/upload-artifact@v1.0.0
+      uses: actions/upload-artifact@v3
       with:
         name: VerbalMemory.exe
         path: publish/VerbalMemory.exe
