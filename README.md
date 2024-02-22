@@ -5,6 +5,7 @@ A simple version of the verbal memory test of human benchmark.
 ## 📦 Technologies
 
 - `C#`
+- `SQL lite`
 
 ## 🦄 Features
 
@@ -22,7 +23,7 @@ I diligently documented the entire process along with a brief demonstration, and
 
 ## 📚 What I Learned
 
-During this project, I've improved my C# and problem solving skills.
+During this project, I've improved my C# and problem solving skills. Also leared a thing or two about storing data in a database and retrieving it.
 
 ### 🧠 Brain:
 
@@ -35,6 +36,7 @@ During this project, I've improved my C# and problem solving skills.
 ### 📓 New knowledge:
 
 - **C#**: First time using C#, learned a lot.
+- **SQL lite**: First time using SQL lite to save and get data.
 
 ### 📈 Overall Growth:
 
@@ -54,4 +56,4 @@ To run the project in your local environment, follow these steps:
 
 ## 🍿 Video
 
-https://github.com/JarneDirken/2024-Angular_Project/video/
+https://github.com/JarneDirken/2023-DevOps_Project/assets/90832359/d57e4d9d-b22c-409a-b7c2-f4dba18388fb
