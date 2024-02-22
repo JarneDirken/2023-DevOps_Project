@@ -1,11 +1,12 @@
 ﻿# 🥷🏽 Verbal Memory Test in C#. (Based on human benchmark)
 
-A simple version of the verbal memory test of human benchmark.
+A simple version of the verbal memory test of human benchmark. Saving data in database and making a .exe file with GitHub Actions.
 
 ## 📦 Technologies
 
 - `C#`
 - `SQL lite`
+- `GitHub Actions`
 
 ## 🦄 Features
 
@@ -20,6 +21,8 @@ In this uncomplicated project, my goal was to develop an application in C#. I op
 The initial steps involved crafting the overall layout and ensuring the functionality of the application.
 
 I diligently documented the entire process along with a brief demonstration, and the link to the GitHub repository is provided (in Dutch). Additionally, a concise demo is available at the conclusion of the readme file.
+
+You should be able to add data to the database and retrieve it. In my case the highscore of the best user. Also we needed to make a .exe file with GitHub Actions.
 
 ## 📚 What I Learned
 
